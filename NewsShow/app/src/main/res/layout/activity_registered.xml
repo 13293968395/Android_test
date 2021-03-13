@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="22dp"
+        android:text="用户名"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/userNameEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userNameEdit" />
+
+    <EditText
+        android:id="@+id/userNameEdit"
+        android:layout_width="177dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/accountEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="22dp"
+        android:text="账号"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/accountEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/accountEdit" />
+
+    <EditText
+        android:id="@+id/accountEdit"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordEdit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEdit" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="22dp"
+        android:text="密码"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/passwordEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/passwordEdit" />
+
+    <EditText
+        android:id="@+id/passwordEdit"
+        android:layout_width="180dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="97dp"
+        app:layout_constraintBottom_toTopOf="@+id/registeredButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/accountEdit" />
+
+    <Button
+        android:id="@+id/registeredButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="238dp"
+        android:text="注册账号"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
